@@ -1,0 +1,57 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mycompany.mytestapp.NewPostFragment">
+
+    <TextView
+        android:id="@+id/label_user_id_newPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_user_id"
+        android:textSize="25dp"/>
+    <EditText
+        android:id="@+id/text_user_id_value_newPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/label_user_id_newPost"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/label_title_newPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_title"
+        android:layout_below="@id/text_user_id_value_newPost"
+        android:textSize="25dp"/>
+    <EditText
+        android:id="@+id/text_title_value_newPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_user_id_value_newPost"
+        android:layout_toRightOf="@id/label_title_newPost" />
+
+    <EditText
+        android:id="@+id/text_post_newPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_title_value_newPost"/>
+
+    <Button
+        android:id="@+id/button_add_post"
+        android:text="@string/button_add_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/button_clear"
+        android:text="@string/button_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+
+</RelativeLayout>
